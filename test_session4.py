@@ -171,7 +171,24 @@ def test_sqrt_check():
     assert a.__sqrt__() == cmath.sqrt(a)
 
 
+#21 
+def test_notimplementederror_check():
+    with pytest.raises(NotImplementedError):
+        session4.Qualean(random.choice([-1 , 0 , 1])).__le__('TSAI') 
+        session4.Qualean(random.choice([-1 , 0 , 1])).__lt__('TSAI')
+        session4.Qualean(random.choice([-1 , 0 , 1])).__gt__('TSAI')
+        session4.Qualean(random.choice([-1 , 0 , 1])).__ge__('TSAI')
 
+
+
+#22
+def test_function_exist_check():
+    a = session4.Qualean(random.choice([-1 , 0 , 1]))
+    b = session4.Qualean(random.choice([-1 , 0 , 1]))
+    assert a.__lt__(b) , "__lt__ is not implementated"
+    assert a.__le__(b) , "__le__ is not implementated"
+    assert a.__gt__(b) , "__gt__ is not implemented"
+    assert a.__ge__(b) , "__ge__ is not implementated"
 
 
 
