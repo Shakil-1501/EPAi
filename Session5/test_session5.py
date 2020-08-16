@@ -53,7 +53,7 @@ def test_squared_power_list():
     assert q1==[1, 2, 4, 8, 16, 32],'Wrong Result'
 
 
-def number_check_in_test_squared():
+def number_check_test_squared():
     q1=session5.squared_power_list(-2,start=0,end=5)
     assert q1==["select valid number"]
 
