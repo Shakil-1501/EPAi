@@ -79,7 +79,7 @@ def test_funcation_had_cap_letter():
 
 
 def test_identation():
-    lines = inspect.getsource(session4)
+    lines = inspect.getsource(session5)
     spaces = re.findall('\n +.', lines)
     for space in spaces:
         assert re.search('[a-zA-Z#@\'\"]', space), "Your code intentation does not follow PEP8 guidelines"
@@ -87,9 +87,9 @@ def test_identation():
         "Your code intentation does not follow PEP8 guidelines" 
 
 
-def number_check_squared():
+def test_squared_power_list():
     q1=session5.squared_power_list(-2,start=0,end=5)
-    assert q1==["select valid number"]
+    assert q1==["select valid number and proper start and end"]
 
 
 def start_and_end_value():
