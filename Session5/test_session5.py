@@ -63,11 +63,20 @@ def start_and_end_value():
     assert q1==['start value should be less than end']
 
 
-'''
-def test_print_func():
-    assert print(1, 2, 3, sep='-', end= ' ***\n')=='1-2-3 ***'
-    
-'''
+def test_squared_power_list():
+    q1=session5.squared_power_list(2,start=0,end=5)
+    assert q1==[1, 2, 4, 8, 16, 32],'Wrong Result'
+
+
+def number_check_in_test_squared():
+    q1=session5.squared_power_list(-2,start=0,end=5)
+    assert q1==['select valid number'],'Wrong Result'
+
+
+def start_and_end_value():
+    q1=session5.squared_power_list(2,start=2,end=1)
+    assert q1==['start value should be less than end']
+
 
 
 def test_squared_power_list():
@@ -83,3 +92,10 @@ def number_check_in_test_squared():
 def start_and_end_value():
     q1=session5.squared_power_list(2,start=2,end=1)
     assert q1==['start value should be less than end']
+
+
+'''
+def test_print_func():
+    assert print(1, 2, 3, sep='-', end= ' ***\n')=='1-2-3 ***'
+    
+'''
