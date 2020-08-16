@@ -28,6 +28,6 @@ def polygon_area(side_length,side=3):
     elif side_length<=0:
         area="please enter valid side_length"
     elif side<3 or side>6:
-        area="please enter side in range 1 to 6"
+        area="please enter side in range 3 to 6"
         
     return area
