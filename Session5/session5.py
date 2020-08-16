@@ -37,8 +37,11 @@ def squared_power_list(number,start=0,end=5):
     if number>0 and start<end:
         for i in range(start,end+1):
             a.append(number**i)
+    elif number<0 and start>end:
+        a.append("select valid number and proper start and end")
     elif start>end:
         a.append("start value should be less than end")
     elif number<0:
         a.append("select valid number")
+    
     return a 
