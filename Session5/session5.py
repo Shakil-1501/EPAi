@@ -5,6 +5,7 @@ import weakref
 import random
 from math import tan, pi
 
+
 def temp_convertor(temp,temp_given_in = 'f'):
     if temp_given_in =='f' and temp>=0:
         t= (temp-32) * 5/9
@@ -16,7 +17,6 @@ def temp_convertor(temp,temp_given_in = 'f'):
         t="please enter the valid range"
     elif temp_given_in not in ('c','f'):
         t="please select correct scale"
-    
     return t
 
 
@@ -29,9 +29,8 @@ def polygon_area(side_length,side=3):
         area="please enter valid side_length"
     elif side<3 or side>6:
         area="please enter side in range 3 to 6"
-        
     return area
-
+ 
 
 def squared_power_list(number,start=0,end=5):
     a=[]
@@ -44,7 +43,6 @@ def squared_power_list(number,start=0,end=5):
         a.append("start value should be less than end")
     elif number<0:
         a.append("select valid number")
-    
     return a 
 
 

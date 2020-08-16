@@ -89,17 +89,18 @@ def test_identation():
 
 def test_squared_power_list():
     q1=session5.squared_power_list(-2,start=0,end=5)
-    assert q1==["select valid number and proper start and end"]
+    assert q1==["select valid number"]
 
 
-def start_and_end_value():
-    q1=session5.squared_power_list(2,start=2,end=1)
+def test_squared_start_end():
+    q1=session5.squared_power_list(-2,start=3,end=1)
     assert q1==["start value should be less than end"]
 
 
-def validity_of_value():
-    q1=session5.squared_power_list(-2,start=5,end=0)
+def test_squared_validity():
+    q1=session5.squared_power_list(-2,start=5,end=1)
     assert q1==["select valid number and proper start and end"]
+
 
 
 
