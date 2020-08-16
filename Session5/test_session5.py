@@ -87,13 +87,13 @@ def test_identation():
         "Your code intentation does not follow PEP8 guidelines" 
 
 
-def test_squared_power_list():
+def test_squared_valid_number():
     q1=session5.squared_power_list(-2,start=0,end=5)
     assert q1==["select valid number"]
 
 
 def test_squared_start_end():
-    q1=session5.squared_power_list(-2,start=3,end=1)
+    q1=session5.squared_power_list(2,start=3,end=1)
     assert q1==["start value should be less than end"]
 
 
