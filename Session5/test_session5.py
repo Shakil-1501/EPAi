@@ -64,7 +64,7 @@ def test_validity_speed():
 
 
 def test_speed_yard_s():
-    q1=session5.speed_convertor(-100,dist='yrd', time='s')
+    q1=session5.speed_convertor(100,dist='yrd', time='s')
     assert q1==30.38
 
 
