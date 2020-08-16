@@ -32,6 +32,7 @@ def polygon_area(side_length,side=3):
         
     return area
 
+
 def squared_power_list(number,start=0,end=5):
     a=list()
     if number>0 and start<end:
@@ -45,3 +46,9 @@ def squared_power_list(number,start=0,end=5):
         a.append("select valid number")
     
     return a 
+
+def speed_convertor(speedk,dist='km', time='min'):
+    if speedk>0 and dist=='m' and time=='s':
+        a=round(speedk/3.6,2)
+        
+    return a

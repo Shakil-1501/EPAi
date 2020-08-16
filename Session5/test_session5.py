@@ -53,6 +53,10 @@ def test_squared_power_list():
     assert q1==[1, 2, 4, 8, 16, 32],'Wrong Result'
 
 
+def test_speed_convertor():
+    q1=session5.speed_convertor(100,dist='m', time='s')
+    assert q1==27.78,'Wrong speed conversion'
+
 def number_check_test_squared():
     q1=session5.squared_power_list(-2,start=0,end=5)
     assert q1==["select valid number"]
@@ -69,8 +73,3 @@ def validity_of_value():
 
 
 
-'''
-def test_print_func():
-    assert print(1, 2, 3, sep='-', end= ' ***\n')=='1-2-3 ***'
-    
-'''
