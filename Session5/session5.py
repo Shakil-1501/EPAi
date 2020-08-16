@@ -50,5 +50,8 @@ def squared_power_list(number,start=0,end=5):
 def speed_convertor(speedk,dist='km', time='min'):
     if speedk>0 and dist=='m' and time=='s':
         a=round(speedk/3.6,2)
-        
+    if speedk>0 and dist=='yrd' and time=='s':
+        a=round(speedk*0.3038,2)
+    if speedk<0
+        a='speed must be positive'
     return a

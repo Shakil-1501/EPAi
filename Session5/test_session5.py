@@ -57,7 +57,19 @@ def test_speed_convertor():
     q1=session5.speed_convertor(100,dist='m', time='s')
     assert q1==27.78,'Wrong speed conversion'
 
-def number_check_test_squared():
+
+def test_validity_speed():
+    q1=session5.speed_convertor(-100,dist='m', time='s')
+    assert q1='speed must be positive'
+
+
+def test_speed_yard_s():
+    q1=session5.speed_convertor(-100,dist='yrd', time='s')
+    assert q1=30.38
+
+
+
+def number_check_squared():
     q1=session5.squared_power_list(-2,start=0,end=5)
     assert q1==["select valid number"]
 
