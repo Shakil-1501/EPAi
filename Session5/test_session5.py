@@ -102,5 +102,10 @@ def test_squared_validity():
     assert q1==["select valid number and proper start and end"]
 
 
+def test_print_function():
+    a=print(1, 2, 3, sep='-', end= ' ***\n')
+    assert type(a) is str
+
+
 
 
