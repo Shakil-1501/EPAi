@@ -34,7 +34,7 @@ def polygon_area(side_length,side=3):
 
 
 def squared_power_list(number,start=0,end=5):
-    a=list()
+    a=[]
     if number>0 and start<end:
         for i in range(start,end+1):
             a.append(number**i)
