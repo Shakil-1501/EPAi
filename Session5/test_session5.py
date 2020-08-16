@@ -55,15 +55,17 @@ def test_squared_power_list():
 
 def number_check_in_test_squared():
     q1=session5.squared_power_list(-2,start=0,end=5)
-    assert q1==['select valid number']
+    assert q1==["select valid number"]
 
 
 def start_and_end_value():
     q1=session5.squared_power_list(2,start=2,end=1)
-    assert q1==['start value should be less than end']
+    assert q1==["start value should be less than end"]
 
 
-
+def validity_of_value():
+    q1=session5.squared_power_list(-2,start=5,end=0)
+    assert q1==["select valid number and proper start and end"]
 
 
 
