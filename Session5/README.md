@@ -27,6 +27,8 @@ We should be able to call it like this:
 &nbsp;
 - Write a test file, that tests all of the functions mentioned above + the other basic ones 
 - Test file must contain at least 25 tests
+- temp_convertor
+- 'temp_convertor'
 
 ---
 &nbsp;
