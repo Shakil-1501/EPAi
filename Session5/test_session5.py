@@ -3,6 +3,13 @@ from decimal import Decimal
 import math
 import cmath
 
+README_CONTENT_CHECK_FOR = ['temp_convertor' ,
+                            'polygon_area',
+                            'squared_power_list',
+                            'speed_convertor',
+                            'time_it']
+
+
 
 def test_temp_convertor_to_c():
     q1=session5.temp_convertor(212,temp_given_in = 'f')
@@ -136,4 +143,39 @@ def test_time_it_print():
     assert type(q1) is float
 
 
+def test_readme_words_counts():
+    readme = open('README.md','r')
+    readme_words = readme.read().split()
+    readme.close()
+    assert len(readme_words) >= 100 , "Kindly define README properly"
 
+
+
+def test_readme_proper_desscription():
+    READMELOOKSGOOD = True
+    readme = open('README.md','r')
+    readme_words = readme.read().split()
+    readme.close()
+    for words in README_CONTENT_CHECK_FOR:
+        if words not in readme_words:
+            READMELOOKSGOOD = False
+            pass
+    assert READMELOOKSGOOD == True , "You have not defined all functions/classes in README.md"
+
+
+
+def test_readme_for_formatting():
+    readme = open('README.md','r')
+    content = readme.read()
+    readme.close()
+    assert content.count('#') >= 5 , "Kindly format the README.md"
+
+
+def test_dist_scale():
+    q1=session5.speed_convertor(100,dist='l', time='min')
+    assert q1=='please enter the correct distance scale'
+
+
+def test_time_scale():
+    q1=session5.speed_convertor(100,dist='m', time='k')
+    assert q1=='please enter the correct distance scale'

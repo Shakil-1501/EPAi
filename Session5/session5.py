@@ -51,6 +51,10 @@ def speed_convertor(speedk,dist='km', time='min'):
         a=round(speedk/3.6,2)
     if speedk>0 and dist=='yrd' and time=='s':
         a=round(speedk*0.3038,2)
+    if dist not in ('km','m','ft','yrd'):
+        a='please enter the correct distance scale'
+    if time not in ('ms','s','m','hr','day'):
+        a='please enter the correct time scale'
     if speedk<0:
         a='speed must be positive'
     return a
