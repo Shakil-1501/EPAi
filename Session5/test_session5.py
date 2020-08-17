@@ -3,8 +3,7 @@ from decimal import Decimal
 import math
 import cmath
 
-README_CONTENT_CHECK_FOR = ['temp_convertor' 
-                            ]
+README_CONTENT_CHECK_FOR = ['temp_convertor']
 
 
 
@@ -169,7 +168,7 @@ def test_readme_for_formatting():
 
 
 def test_dist_scale():
-    q2=session5.speed_convertor(100,dist='z', time='min')
+    q2=session5.speed_convertor(100,dist='z', time='s')
     assert q2=='please enter the correct distance scale'
 
 def test_time_scale():
