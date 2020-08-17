@@ -3,7 +3,7 @@ from decimal import Decimal
 import math
 import cmath
 
-README_CONTENT_CHECK_FOR = [temp_convertor 
+README_CONTENT_CHECK_FOR = ['temp_convertor' 
                             ]
 
 
