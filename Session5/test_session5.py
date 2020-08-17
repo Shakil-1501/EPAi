@@ -104,8 +104,32 @@ def test_squared_validity():
 
 def test_print_function():
     a=print(1, 2, 3, sep='-', end= ' ***\n')
-    assert type(a) is str
+    assert bool(a)==False
 
+
+def test_timeit_temp_convertor():
+    q1=session5.time_it('temp_convertor',212,  repetitons= 100,temp_given_in = 'f')
+    assert type(q1) is float
+
+
+def test_timeit_polygon_area():
+    q1=session5.time_it(polygon_area,3,repetitons=100,side=3)
+    assert type(q1) is float
+
+
+def test_time_it_speed_convertor():
+    q1=session5.time_it(speed_convertor,20,repetitons=100,dist='m', time='s')
+    assert type(q1) is float
+
+
+def test_timeit_squared_powerlist():
+    q1=session5.time_it(squared_power_list,2,repetitons=100,start=0,end=5)
+    assert type(q1) is float
+
+
+def test_time_it_print():
+    q1=session5.time_it(print, 1, 2, 3,repetitons=100,sep='-', end= ' ***\n')
+    assert type(q1) is float
 
 
 

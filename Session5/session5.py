@@ -54,3 +54,21 @@ def speed_convertor(speedk,dist='km', time='min'):
     if speedk<0:
         a='speed must be positive'
     return a
+
+
+def time_it(fn, *args, repetitons= 5, **kwargs):
+    for i in range(repetitons):
+        start=time.perf_counter()
+        #print(start)
+        #start=int(round(time.time() * 1000))
+        #start=int(round(time.time() * 100000000))
+        fn(*args,**kwargs)
+        #end=time.perf_counter()
+        #end=int(round(time.time() * 100000000))
+        #print(end)
+    end=time.perf_counter()
+    #print(end)
+    time_taken=(end-start)/repetitons
+    return time_taken
+
+
