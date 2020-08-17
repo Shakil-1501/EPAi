@@ -178,4 +178,4 @@ def test_dist_scale():
 
 def test_time_scale():
     q1=session5.speed_convertor(100,dist='m', time='k')
-    assert q1=='please enter the correct distance scale'
+    assert q1=='please enter the correct time scale'
