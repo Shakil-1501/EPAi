@@ -17,8 +17,8 @@ We should be able to call it like this:
 - It implements these functions (with exactly the same names) 
 &nbsp;
 ``` html 
-    'temp_convertor' ,'polygon_area','squared_power_list','speed_convertor',
-                            'time_it','print'
+    temp_convertor ,polygon_area,squared_power_list,speed_convertor,
+                            time_it,print
                             
                             
                           
