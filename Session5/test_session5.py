@@ -4,10 +4,7 @@ import math
 import cmath
 
 README_CONTENT_CHECK_FOR = ['temp_convertor' ,
-                            'polygon_area',
-                            'squared_power_list',
-                            'speed_convertor',
-                            'time_it']
+                            ]
 
 
 
